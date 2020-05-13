@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="12dp">
+
+    <!-- Here add the Contact Details-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/MY_GREEN_2">
+        <!-- Here add the tag Details-->
+        <TextView
+            android:id="@+id/text_view_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Madrid"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textColor="@color/colorPrimaryDark">
+        </TextView>
+
+        <!-- Name for the contact is here-->
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciucur Daniel"
+            android:maxLines="1"
+            android:layout_toStartOf="@id/text_view_tag"
+            android:layout_alignParentStart="true"
+            android:ellipsize="end"
+            android:textColor="@color/black">
+        </TextView>
+
+        <!-- Phone number is here-->
+        <TextView
+            android:id="@+id/text_view_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_name"
+            android:text="0757541317"
+            android:textColor="@color/black">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
